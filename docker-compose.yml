@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  cleanarchitecture:
+    image: cleanarchitecture:latest
+    container_name: cleanarchitecture
+    build:
+      context: .
+      dockerfile: ./src/CleanArchitecture.Api/Dockerfile
+    ports:
+      - "5000:80"
